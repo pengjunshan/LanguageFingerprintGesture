@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kelin.languagefingerprintgesture">
+
+  <!-- 指纹权限 -->
+  <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+  <!-- 震动权限 -->
+  <uses-permission android:name="android.permission.VIBRATE"/>
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:name=".base.MyApplication"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity
+      android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".LanguageActivity">
+    </activity>
+    <activity android:name=".FingerprintLoginActivity">
+    </activity>
+    <activity android:name=".SetGestureLockActivity">
+    </activity>
+    <activity android:name=".LoginSettingActivity">
+    </activity>
+    <activity android:name=".GestureLockActivity">
+    </activity>
+  </application>
+
+</manifest>

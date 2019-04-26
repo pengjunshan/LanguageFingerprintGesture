@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+
+  <RadioGroup
+    android:id="@+id/rgLanguages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <RadioButton
+      android:id="@+id/rbChinese"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/radius5white_nostroke"
+      android:button="@null"
+      android:drawableRight="@drawable/selector_checkbox_contact"
+      android:padding="10dp"
+      android:text="简体中文"
+      android:textSize="16sp" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="4dp" />
+
+    <RadioButton
+      android:id="@+id/rbEnglish"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/radius5white_nostroke"
+      android:button="@null"
+      android:drawableRight="@drawable/selector_checkbox_contact"
+      android:padding="10dp"
+      android:text="English"
+      android:textSize="16sp" />
+  </RadioGroup>
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/commit"
+    app:layout_constraintTop_toBottomOf="@+id/rgLanguages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="保存"
+    android:textColor="#ffffff"
+    android:textSize="18sp"
+    android:background="#01367A"
+    />
+
+</android.support.constraint.ConstraintLayout>

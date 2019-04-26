@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+    <!--设置手势解锁时提示view-->
+    <com.kelin.languagefingerprintgesture.gesture.GestureLockDisplayView
+      android:id="@+id/display_view"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center_horizontal"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      />
+
+    <TextView
+      android:id="@+id/setting_hint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="10dp"
+      android:text="绘制解锁图案"
+      app:layout_constraintTop_toBottomOf="@+id/display_view"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      />
+
+    <TextView
+      android:id="@+id/hintTV"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="与第一次设置密码不同，请再次设置"
+      android:textColor="#FC6265"
+      android:textSize="14sp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/setting_hint"
+      android:layout_marginTop="10dp"
+      android:visibility="invisible"
+      />
+
+    <!--手势解锁view-->
+    <com.kelin.languagefingerprintgesture.gesture.GestureLockLayout
+      android:id="@+id/gesture_view"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      app:layout_constraintTop_toBottomOf="@+id/hintTV"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      />
+
+
+    <TextView
+      android:id="@+id/reSet"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="重新设置"
+      app:layout_constraintTop_toBottomOf="@+id/gesture_view"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      android:textSize="16sp"
+      android:textColor="#333333"
+      android:layout_marginTop="10dp"
+      />
+  </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

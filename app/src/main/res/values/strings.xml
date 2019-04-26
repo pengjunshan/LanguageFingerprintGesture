@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">多语言、指纹登录、手势登录</string>
+  <string name="login">登录</string>
+  <string name="moreLanguage">多语言</string>
+  <string name="loginSetting">登录设置</string>
+  <string name="fingerprintLogin">使用指纹登录</string>
+  <string name="gestureLogin">使用手势登录</string>
+  <string name="fingerprint_hint">开启指纹登录后可使用指纹认证完成快速登录，设置仅对本机生效。如需修改指纹，请在系统设置中操作。</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">LanguageFingerprintGesture</string>
+  <string name="login">login</string>
+  <string name="moreLanguage">moreLanguage</string>
+  <string name="loginSetting">loginSetting</string>
+  <string name="fingerprintLogin">fingerprintLogin</string>
+  <string name="gestureLogin">gestureLogin</string>
+
+</resources>
