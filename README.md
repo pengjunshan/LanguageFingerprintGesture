@@ -3,7 +3,7 @@
 
 ##多语言    
 
-![多语言.gif](https://upload-images.jianshu.io/upload_images/3735156-5bc16244ea5030e2.gif?imageMogr2/auto-orient/strip)
+![多语言.gif](https://upload-images.jianshu.io/upload_images/3735156-5bc16244ea5030e2.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/340)
 
 ##指纹登录    
 
